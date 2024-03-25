@@ -18,6 +18,10 @@
                 <div class="nav">                     
                     <img src="img/Logo.png" alt="webovio" class="Logo">
                     <div class="dropdown" id="forma">
+                        <div class="lr5">
+                            <!-- <button type="button" onclick="chpok('heart')" class="btn btn-outline-light bth-square" class="llab5" style="margin-right: 50px;"><p15>click</p15></button>
+                            <div class="elemetlab5"><i class="fa fa-heart" id="heart"></i></div> -->
+                        </div>
                         <button type="button" onclick="toggleSwitch()" class="btn btn-outline-light btn-circle" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-bars"></i></button>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                             <li><a class="dropdown-item" href="#">Пункт меню</a></li>
@@ -28,7 +32,7 @@
                                 Войти   
                             </button>
                         </ul>
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                               <div class="modal-content light-theme">
                                 <div class="modal-header">
@@ -38,21 +42,23 @@
                                 <div class="modal-body">
                                     <form action="my.php" method="POST">
                                         <div class="md-3">
-                                            <label for="validationCustomUsername" class="form-label" name="login">Логин</label>
+                                            <label for="validationCustomUsername" class="form-label">Логин</label>
                                             <div class="input-group has-validation">
-                                                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" name = "login" required>
+                                               <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" name="login" required>
                                             </div>
                                         </div>
                                         <div class="mb-3">
-                                          <label for="exampleInputpasswordr" class="form-label" name="password">Пароль</label>
-                                          <input type="password" pattern=".{7,}" class="form-control" id="exampleInputphonenumber" aria-describedby="emailHelp" required>
+                                            <label for="exampleInputpassword" class="form-label">Пароль</label>
+                                            <div class="input-group has-validation">
+                                               <input type="text" pattern=".{7,}" class="form-control" id="validationCustomPassword" aria-describedby="inputGroupPrepend" name="password" required>
+                                            </div>
                                         </div>
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" class="demo-query-all">Закрыть</button>
                                         <button type="submit" class="btn btn-primary" id="save" name="done" class="demo-query-all">Зарегистрироваться</button>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button onclick='toggleVisibility()' class="btn btn-secondary" id="show" class="demo-query-all">Показать</button>
+                                    <button onclick='toggleVisibility()' class="btn btn-secondary" id="show" cl8ass="demo-query-all">Показать</button>
                                         <div id='hiddenDiv' style='display:none'>Информация информация информация информация информация информация информация информация информация информация</div>
                                 </div>
                               </div>
@@ -60,6 +66,7 @@
                            </div>
                     </div>
                 </div>
+                <?php include 'my2.php'; ?>
                 <div class="offer">
                     <p>A place where</p>
                     <h1>
@@ -67,12 +74,11 @@
                     </h1>
                     <p1>Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</p1>
                     <div class="lr5">
+                        <button type="button" onclick="chpok('heart')" class="btn btn-outline-light bth-square" style="margin-right: 50px; color: #FFD723; border-color: #FFD723;"><p15>get in touch</p15></button>
                         <div class="elemetlab5"><i class="fa fa-heart" id="heart"></i></div>
-                        <button type="button" onclick="chpok('heart')" class="btn btn-outline-light bth-square" class="llab5" style="margin-right: 50px; color: #FFD723; border-color: #FFD723;"><p15>get in touch</p15></button>
                     </div> 
                 </div>
             </div>                   
-        </div>
     </header>
     <section class="about">
         <div class="container">
@@ -105,7 +111,6 @@
             </ul>
         </div>
     </section>
-
     <footer class="footer">
         <section class = 'some_amazing'>
             <div class = 'some_amazing_wrap'>
